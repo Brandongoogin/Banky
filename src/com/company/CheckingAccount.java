@@ -20,7 +20,7 @@ public class CheckingAccount extends Account {
 
     public void clearCheck(double amount)
     {
-        decreaseBalance(amount + checkCharge); hghghg
+        decreaseBalance(amount + checkCharge);
     }
     /* (non-Javadoc)
      * @see Account#monthlyInterest()
