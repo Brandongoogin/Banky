@@ -4,35 +4,21 @@ public class SavingsAccount extends Account {
     private double annualInterest;
 
 
-    public SavingsAccount(int idNumber, double startBal, double ai){
+    public SavingsAccount(int idNumber, double startBal, double ai) {
         super(idNumber, startBal);
-        annualInterest = ai; 
+        annualInterest = ai;
     }
 
+    public void withdraw(double amount ){
+        if(amount <= currentBalance()) {
+            super.decreaseBalance(amount);
+        }
+        public double monthlyInterst(double w){
+                
 
 
-
-
-
-
-
-    public void withdraw(){
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
