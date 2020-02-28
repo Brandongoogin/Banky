@@ -9,16 +9,17 @@ public class SavingsAccount extends Account {
         annualInterest = ai;
     }
 
-    public void withdraw(double amount ){
-        if(amount <= currentBalance()) {
+    public void withdraw(double amount ) {
+        if (amount <= currentBalance()) {
             super.decreaseBalance(amount);
         }
-        public double monthlyInterst(double w){
-                
+    }
+        public double monthlyInterest(){
+            return (currentBalance() * annualInterest) / 12;
+
+        }
 
 
 
     }
 
-
-}
