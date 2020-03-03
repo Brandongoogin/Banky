@@ -18,8 +18,5 @@ public class SavingsAccount extends Account {
             return (currentBalance() * annualInterest) / 12;
 
         }
-
-
-
     }
 
